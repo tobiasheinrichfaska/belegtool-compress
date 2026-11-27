@@ -5,8 +5,8 @@ structural variant (`pikepdf`), returned smallest-first, with cooperative cancel
 budget against oversized-MediaBox bombs and CPU-fairness primitives for background pools. The import name is
 `belegtool_compress`.
 
-Extracted from the DigitalerUnterlagenOrdner (BelegTool) project, which consumes it for its compression
-engine. It does not import the host application.
+Used by the DigitalerUnterlagenOrdner (BelegTool) project for its compression engine. It does not import
+the host application. Origin: split out with its full history from DigitalerUnterlagenOrdner (`packages/belegtool-compress`) on 2026-11-27.
 
 ## What it does
 
@@ -28,7 +28,7 @@ engine. It does not import the host application.
 
 ```
 pip install .                      # from this directory
-pip install "belegtool-compress @ git+https://github.com/<owner>/belegtool-compress.git@v0.1.0"
+pip install "belegtool-compress @ git+https://github.com/tobiasheinrichfaska/belegtool-compress.git@v0.1.0"
 pip install -e .[dev] && pytest    # development (dev pulls PyMuPDF, see below)
 ```
 
